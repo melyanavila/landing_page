@@ -48,39 +48,37 @@ a{
 
 .contenedor{
     width: 100%;
-    height: auto;
-    margin:auto;
-    padding: 40px 0px;
+    height: 400px;
+    margin-top:10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:5px
-    
+    gap: 10px;
 }
 
-.contenedor-servicios{
-    width: 100%;
-    height: auto;
-    color: white;
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.card{    
+.card{
+    margin-top: 20px;
     border-radius: 10px;
-	min-height: 200px;
+	height: fit-content;
 	font-weight: normal;
 	position: relative;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
+	overflow: wrap;
 }
 
-.card .textos {
-	height: 100%;
-    padding-left: 20px;
-	
+.card h1{
+    text-align: center;
+}
+
+.textos{
+    text-align: justify;
+    padding: 10px;
+}
+
+.titulos{
+    width: auto;
+}
+
+.form{
+    width: 100%;
 }
 
 .blog{
@@ -166,17 +164,19 @@ a{
 }
 
 .ft-container{
-    height: 100px;
+    height: 150px;
     width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
 .redes{
-    width: 100%;
+    width: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 0px;
 }
 
 .sociales{
@@ -185,3 +185,57 @@ a{
     grid-template-rows: auto;
 }
 
+.men{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foot{
+    width: 100%;
+    padding-top: 0px;
+}
+
+/*Responsive*/
+
+
+@media screen and (max-width:400px){
+
+    .fondo-pantalla{
+        padding-left: 10px;
+    }
+    .header{
+        background-image: none;
+    }
+    
+    .header .nav-right-section a{
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    .card h1{
+        font-size: 25px;
+    }
+
+    .card h2{
+        font-size: 18px;
+    }
+
+    .card h3{
+        font-size: 14px;
+    }
+        
+    .blog .contenedor{
+        grid-template-columns: 1fr;
+    }
+
+    .trabajador{
+        grid-template-rows: auto;
+    }   
+
+    .trab{
+        grid-template-rows: auto;
+    }
+
+    /*No me funciona :( */
+}
