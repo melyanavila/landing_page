@@ -14,12 +14,9 @@ header{
     height: 200px;
     display:flex;
     justify-content:space-between;
-}
-
-header{
-    width: 100%;
-    height: 100px;
-
+    border-bottom: 2px;
+    border-color: white;
+    background-image: url('img/encabezado.jpg');
 }
 
 header .logo-container{
@@ -41,6 +38,7 @@ nav .nav-right-section a{
     margin-right:25px;
     row-gap: 20px;
     color: white;
+    background-color: black;
 }
 
 a{
@@ -48,23 +46,142 @@ a{
     cursor:pointer;
 }
 
-.jumbotron{
+.contenedor{
     width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    height: auto;
+    margin:auto;
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px
     
 }
 
-.contenedor{
-    width: 20%;
-    height: 650px;
+.contenedor-servicios{
+    width: 100%;
+    height: auto;
     color: white;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
     align-items: flex-start;
-
-
 }
+
+.card{    
+    border-radius: 10px;
+	min-height: 200px;
+	font-weight: normal;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card .textos {
+	height: 100%;
+    padding-left: 20px;
+	
+}
+
+.blog{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portada{
+    height:100px;
+}
+
+.articulos{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.editorial{
+    height:100px;
+    padding-left: 40px;
+}
+
+.opinion{
+    padding-left: 20px;
+    width: 100%;
+    height:300px;
+    display:flex;
+    flex-direction: row;
+}
+
+.trabajador{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trab{
+    width: 100%;
+    text-align: justify;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.serv{
+    width: 100%;
+    height: 190px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.descripcion{
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.tarjeta1{
+    background-image: url('img/1.png');
+    background-size: cover;
+}
+
+.tarjeta2{
+    background-image: url('img/2.png');
+    background-size: cover;
+}
+
+.tarjeta3{
+    background-image: url('img/3.png');
+    background-size: cover;
+}
+
+.footer{
+    padding-top: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ft-container{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.redes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.sociales{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+}
+
